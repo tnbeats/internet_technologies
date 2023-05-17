@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        a {
+            color: green; /* Specificity: 1 */
+        }
+
+        #a1 {
+            color: orange; /* Specificity: 100 */
+        }
+
+        .important {
+            color: red;
+            font-weight: bold; /* Specificity: 10 */
+        }
+
+        a.important {
+            color: #FF00FF; /*magenta*/ /* Specificity: 11 */
+        }
+
+        li a {
+            color: silver; /* Specificity: 2 */
+        }
+
+        #li1 a {
+            color: blue; /* Specificity: 101 */
+        }
+
+        li#li1 a {
+            color: #F88017; /*dark orange*/ /* Specificity: 102 */
+        }
+
+        li#li1 a.important {
+            color: #FF00FF; /*magenta*/ /* Specificity: 112 */
+        }
+
+        body li a {
+            color: black;
+            background-color: blue; /* Specificity: 3 */
+        }
+
+        ul li a {
+            color: black;
+            background-color: black; /* Specificity: 3 */
+        }
+
+
+        #ul1 li a.important {
+            color: #254117; /*dark green*/ /* Specificity: 111 */
+        }
+
+
+        ul#ul1 li a.important {
+            color: #00FFFF; /*cyan*/ /* Specificity: 112 */
+        }
+
+        #body1 ul li a.important {
+            color: yellow; /* Specificity: 112 */
+        }
+    </style>
+</head>
+<body id="body1">
+<ul id="ul1">
+    <li id="li1"> A bullet with a
+        <a id="a1" class="important" href="#">link</a>
+    </li>
+</ul>
+</body>
+</html>

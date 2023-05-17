@@ -1,0 +1,26 @@
+<html>
+<head>
+  <style>
+    #myElement {
+      color: red; /* Specificity: 100 */
+    }
+
+    div p {
+      color: blue; /* Specificity: 2 */
+    }
+
+    .myClass {
+      color: green; /* Specificity: 10 */
+    }
+
+    div#myElement.myClass p {
+      color: orange; /* Specificity: 112 */
+    }
+  </style>
+</head>
+<body>
+  <div id="myElement" class="myClass">
+    <p>Example Text</p>
+  </div>
+</body>
+</html>

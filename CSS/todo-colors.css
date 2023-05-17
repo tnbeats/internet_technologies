@@ -1,0 +1,75 @@
+/* To Do Styles */
+
+/* To Do List */
+.todolist {}
+
+/* Individual Todo */
+.todo {
+    overflow: hidden;
+}
+
+/* make text of overdue todos red */
+.todo.overdue {
+    color: rgb(249,56,49);
+}
+
+/* Priority icons */
+.icon {
+    font-size: 2.5em;
+    color: #9bc33f; /* normal/green */
+    padding-top: 10px;
+}
+
+/* Urgent/red */
+.icon.urgent {
+    color: rgb(249,56,49);
+}
+
+/* Medium/orange */
+.icon.medium {
+    color: #ff753e;
+}
+
+/* Info of the todo, title and date */
+.todo-info {
+}
+
+/* Title */
+.todo-title {
+    line-height: 1.5em;
+    font-weight: normal;
+}
+
+/* Date */
+.todo-date {
+    color: #bbb;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Note about the date, e.g. "that's today!" or "overdue" */
+.date-note {
+    font-style: italic;
+}
+
+.overdue .date-note {
+    color: rgb(249,56,49);
+}
+
+/* Checkboxes! */
+input[type=checkbox] {}
+
+/* Override other float exercise styles */
+div {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: #eee;
+}
+
+.container {
+    background: transparent;
+    padding: 40px 0;
+}

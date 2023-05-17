@@ -1,0 +1,56 @@
+/* To Do List */
+.todolist {
+    padding-left: 50px;
+    background-color: white;
+    border : 2px solid #000000;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+/* Individual Todo */
+.todo {
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Priority icon dot */
+.icon {
+    display: inline;
+    margin: 0 10px;
+    font-size: 2em;
+    vertical-align: top;
+}
+
+/* Info of the todo, title and date */
+.todo-info {
+    display: inline-block;
+}
+
+/* Title */
+.todo-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+/* Date */
+.todo-date {
+
+}
+
+/* Checkboxes! */
+input[type=checkbox] {
+    
+}
+.check {
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
